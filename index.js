@@ -111,19 +111,10 @@ const port = process.env.PORT || 9090;
   }
   });
   console.log('Plugins installed successful ✅')
-  console.log('Bot connected to whatsapp ✅')
+  console.log('AYTANA-XMD-V1 CONNECTED SUCCESSFULLY ✅')
   
-  let up = `╭╼━═⧼𝐁𝐎𝐓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓⧽═━╾╮
-┃┋♚ *PRÉFIX:* *➥ {${config.PREFIX}}*
-┃┋
-┃┋♻ *MODE:* *[${config.MODE}]*
-┃┋
-┃┋♜ *BOT REPO:* 
-┃┋     https://github.com/DAWENS-BOY96/AYTANA-XMD-V1
-┃╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈⊷
-╰╼════════════════╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ DAWENS BOY*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/nsk6ix.png` }, caption: up })
+  let up = `*Hello there AYTANA-XMD-V1 User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet AYTANA-XMD-V1 WhatsApp Bot.\n\n *Thanks for using AYTANA-XMD-V1 \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \https://whatsapp.com/channel/0029VbAq7chIXnlyraijAX1u\n\n- *YOUR PREFIX:* = ${prefix}\n\n- *BOT MODE:* = ${config.MODE}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/DAWENS-BOY96/AYTANA-XMD-V1\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ DAWENS BOY \ud83d\udda4`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vk893z.png` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -210,7 +201,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('13058962443', '13058962443', '50942241547');
+    const jawad = ('13058962443', '50942241547', '13058962443');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -257,7 +248,7 @@ const port = process.env.PORT || 9090;
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("13058962443") && !isReact) {
+if (senderNumber.includes("5090000000") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -443,7 +434,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
                   }
                   if (mime.split("/")[0] === "audio") {
                     return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
-           }
+                  }
                 }
     //==========================================================
     conn.cMod = (jid, copy, text = '', sender = conn.user.id, options = {}) => {
@@ -737,7 +728,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/megalodon-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/izuka-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
@@ -784,5 +775,3 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   setTimeout(() => {
   connectToWA()
   }, 4000);
-
-                                                                                                                 
