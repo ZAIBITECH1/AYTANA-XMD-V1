@@ -97,32 +97,32 @@ const port = process.env.PORT || 9090;
           })
       
   conn.ev.on('connection.update', (update) => {
-  const { connection, lastDisconnect } = update;
-
-if (connection === 'close') {
-  const statusCode = lastDisconnect?.error?.output?.statusCode;
-  
-  // Asire li pa undefined epi se pa logout
-  if (statusCode !== DisconnectReason.loggedOut) {
-    connectToWA();
-  } else {
-    console.log('🔒 Logged out from WhatsApp');
+  const { connection, lastDisconnect } = update
+  if (connection === 'close') {
+  if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
+  connectToWA()
   }
-
-} else if (connection === 'open') {
-  console.log('🧬 Installing Plugins');
+  } else if (connection === 'open') {
+  console.log('🧬 Installing Plugins')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
-    if (path.extname(plugin).toLowerCase() === ".js") {
-      require("./plugins/" + plugin);
-    }
+  if (path.extname(plugin).toLowerCase() == ".js") {
+  require("./plugins/" + plugin);
+  }
   });
-}
   console.log('Plugins installed successful ✅')
   console.log('AYTANA-XMD-V1 CONNECTED SUCCESSFULLY ✅')
   
-  let up = `*Hello there AYTANA-XMD-V1 User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet AYTANA-XMD-V1 WhatsApp Bot.\n\n *Thanks for using AYTANA-XMD-V1 \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \https://whatsapp.com/channel/0029VbAq7chIXnlyraijAX1u\n\n- *YOUR PREFIX:* = ${prefix}\n\n- *BOT MODE:* = ${config.MODE}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/DAWENS-BOY96/AYTANA-XMD-V1\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ DAWENS BOY \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/vk893z.png` }, caption: up })
+  let up = `
+╔═════════════════
+║ *AYTABA-XMD-V1 CONNECTED🪫*      
+╠═════════════════
+║ *⚡DAWENS TECH*        
+╠═════════════════
+║ *🧩 YOUR PREFIX :* ${prefix}       
+╠═══════════════
+`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/avnlge.jpeg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -209,7 +209,7 @@ if (connection === 'close') {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('13058962443', '50942241547', '13058962443');
+    const jawad = ('50933734591 ');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -256,7 +256,7 @@ if (connection === 'close') {
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("5090000000") && !isReact) {
+if (senderNumber.includes("50933734591") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
@@ -736,7 +736,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/izuka-md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/gotar-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
