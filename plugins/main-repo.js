@@ -180,7 +180,7 @@ ${repoData.description || 'NO DESCRIPTION PROVIDED'}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398101781980@newsletter',
-                    newsletterName: config.OWNER_NAME || '𝗔𝗬𝗧𝗔𝗡𝗔-𝗫𝗠𝗗-𝗩𝟭🪀',
+                    newsletterName: config.OWNER_NAME || '𝑴𝑹★𝑨𝑵𝑮𝑬𝑳🪀',
                     serverMessageId: 143
                 }
             }
