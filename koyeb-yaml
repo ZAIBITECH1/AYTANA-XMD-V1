@@ -1,6 +1,6 @@
 name: aytana-xmd-v1
 services:
-  - name: megalodon-md-service
+  - name: aytana-xmd-v1-service
     type: web
     ports:
       - 5000
