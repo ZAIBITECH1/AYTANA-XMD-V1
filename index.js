@@ -97,19 +97,27 @@ const port = process.env.PORT || 9090;
           })
       
   conn.ev.on('connection.update', (update) => {
-  const { connection, lastDisconnect } = update
-  if (connection === 'close') {
-  if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
-  connectToWA()
-}
-  } else if (connection === 'open') {
-  console.log('🧬 Installing Plugins')
+  const { connection, lastDisconnect } = update;
+
+if (connection === 'close') {
+  const statusCode = lastDisconnect?.error?.output?.statusCode;
+  
+  // Asire li pa undefined epi se pa logout
+  if (statusCode !== DisconnectReason.loggedOut) {
+    connectToWA();
+  } else {
+    console.log('🔒 Logged out from WhatsApp');
+  }
+
+} else if (connection === 'open') {
+  console.log('🧬 Installing Plugins');
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
-  if (path.extname(plugin).toLowerCase() == ".js") {
-  require("./plugins/" + plugin);
-  }
+    if (path.extname(plugin).toLowerCase() === ".js") {
+      require("./plugins/" + plugin);
+    }
   });
+}
   console.log('Plugins installed successful ✅')
   console.log('AYTANA-XMD-V1 CONNECTED SUCCESSFULLY ✅')
   
