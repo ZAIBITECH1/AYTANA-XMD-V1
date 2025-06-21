@@ -113,17 +113,17 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `╔═◈『𝗔𝗬𝗧𝗔𝗡𝗔-𝗫𝗠𝗗-𝗩𝟭』◈═╗
-║🪀 ┃ *PRÉFIX:* *➥${config.PREFIX}*
-║
-║♻️ ┃ *MODE:* *[${config.MODE}]*
-║
-║📦 ┃ *BOT REPO:* 
-║     https://github.com/PROFESSEURMDX/HAIKO-MDX-V2
-║
-╚══════════════════╝
+  let up = `╭╼━═⧼𝐁𝐎𝐓 𝐂𝐎𝐍𝐍𝐄𝐂𝐓⧽═━╾╮
+┃┋♚ *PRÉFIX:* *➥ {${config.PREFIX}}*
+┃┋
+┃┋♻ *MODE:* *[${config.MODE}]*
+┃┋
+┃┋♜ *BOT REPO:* 
+┃┋     https://github.com/DAWENS-BOY96/AYTANA-XMD-V1
+┃╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈⊷
+╰╼════════════════╾╯
 > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ DAWENS BOY*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/mz913v.jpeg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/nsk6ix.png` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
