@@ -115,7 +115,7 @@ const port = process.env.PORT || 9090;
   
   let up = `
 ╔═════════════════
-║ *AYTABA-XMD-V1 CONNECTED🪫*      
+║ *AYTANA-XMD-V1 CONNECTED🪫*      
 ╠═════════════════
 ║ *⚡DAWENS TECH*        
 ╠═════════════════
