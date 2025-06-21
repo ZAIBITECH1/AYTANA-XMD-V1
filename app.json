@@ -1,6 +1,6 @@
 {
   "name": "AYTANA-XMD-V1",
-  "description": "Javascript WhatsApp bot made ʙʏ DAWENS BOY",
+  "description": "Javascript WhatsApp bot made ʙʏ 𝑴𝑹★𝑨𝑵𝑮𝑬𝑳",
   "logo": "https://files.catbox.moe/mz913v.jpeg",
   "keywords": ["AYTANA-XMD-V1"],
   "success_url": "/",
@@ -86,7 +86,7 @@
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "ᴘʀᴏғᴇssᴇᴜʀ ᴛᴇᴄʜ"
+      "value": "𝑴𝑹★𝑨𝑵𝑮𝑬𝑳"
 }, 
 
     "OWNER_NUMBER": {
